@@ -58,7 +58,7 @@ if st.button('Send'):
     if user_input:
         # Send the user input to the Flask backend
         response = requests.post(
-            "http://127.0.0.1:5000/chat",  # Adjust this URL to match where your Flask server is running
+            "chat-botfinalproject-production.up.railway.app",  # Adjust this URL to match where your Flask server is running
             headers={"Content-Type": "application/json"},
             data=json.dumps({"message": user_input})
         )
