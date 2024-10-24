@@ -51,7 +51,7 @@ if st.button('Generate Random Question'):
     st.session_state['user_input'] = random_question  # Update session state with random question
 
 # Create a text input for user to type their question, pre-filled with session state
-user_input = st.text_input("Your Question:", value=st.session_state['user_input'], key='user_input')
+user_input = st.text_input("Your Question:", value=st.session_state['user_input'], key='user_input', placeholder = "What is the Capital of France?")
 
 # When the user clicks the "Send" button
 if st.button('Send'):
